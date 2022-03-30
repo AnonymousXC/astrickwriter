@@ -54,6 +54,11 @@
     align-items: center;
     float: left;
     margin: 5px;
+    transition: all 0.4s;
+}
+
+.icon-social:hover {
+    background-color: var(--complementary-color);
 }
 
 .links-sc {
