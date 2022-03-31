@@ -1,0 +1,20 @@
+#container-8 {
+    position: relative;
+    left: 300px;
+    width: calc(100% - 320px);
+    height: auto;
+    background-color: var(--bg-color-2);
+    padding: 10px;
+    padding-top: 50px;
+    transition: all 1s;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #container-8 {
+        left: 0px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,141 @@
+#container-5 {
+    position: relative;
+    left: 300px;
+    width: calc(100% - 320px);
+    height: auto;
+    background-color: var(--bg-color-2);
+    padding: 10px;
+    padding-top: 50px;
+    transition: all 1s;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.tabs {
+    position: relative;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 50px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin-top: 35px;
+    left: calc(50% - 320px);
+    transform: translateX(calc(-50% + 320px));
+    overflow: hidden;
+    padding: 10px;
+    user-select: none;
+}
+
+.tablinks {
+    color: #272829;
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.active {
+    color: var(--complementary-color);
+}
+
+.tabcontent {
+    position: relative;
+    width: 88%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.items {
+    position: relative;
+    width: 226px;
+    height: 185px;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.writing-img {
+    width: 226px;
+    height: 185px;
+}
+
+
+.tablinks:hover {
+    color: #149ddd;
+}
+
+.git-repo {
+    width: 206px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.all-items {
+    width: 88%;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    #container-5 {
+        left: 0;
+        width: 100%;
+    }
+    .tabs {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .all-items {
+        width: 63%;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .all-items {
+        width: 78%;
+    }
+}
+
+
+@media only screen and (max-width: 999px) {
+    .all-items {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .all-items {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .all-items {
+        width: 73%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .all-items {
+        width: min-content;
+    }
+}

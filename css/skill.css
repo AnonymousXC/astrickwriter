@@ -1,0 +1,108 @@
+
+#container-3 {
+    position: relative;
+    width: calc(100% - 320px);
+    height: auto;
+    background-color: var(--bg-color-2);
+    left: 300px;
+    padding: 10px;
+    padding-top: 50px;
+    transition: all 1s;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.progressbars {
+    position: relative;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex: 50% 50%;
+    max-width: 95%;
+    width: 95%;
+    float: left;
+    flex-direction: row;
+    padding: 5px;
+    left: 2%;
+}
+
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+}
+
+
+.progressbar-wrapper {
+    position: relative;
+    display: inline;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.skill-txt {
+    font-size: .75rem;
+    font-family: Poppins,sans-serif !important;
+    padding-bottom: 5px;
+    color: #dfdcd8;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.val {
+    font-size: .75rem;
+    font-weight: 600;
+    float: right;
+    color: #dfdcd8;
+}
+
+.break {
+    flex-basis: 10%;
+    height: 0;
+}
+
+#container-4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-1);
+}
+
+
+progress {
+    border-radius: 0px; 
+    height: 10px !important;
+}
+
+
+progress::-webkit-progress-bar {
+    background-color: rgb(68, 68, 68);
+    border-radius: 0px;
+}
+
+
+progress::-webkit-progress-value {
+    background-color: var(--complementary-color);
+    border-radius: 0px;
+    transition: all 2.5s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #container-3 {
+        width: 100%;
+        left: 0px;
+    }
+    .progressbars {
+        max-width: 90%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .progressbars {
+        display: block;
+    }
+}

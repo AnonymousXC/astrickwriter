@@ -1,0 +1,24 @@
+#toogle-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #149ddd;
+    font-size: 30px;
+    font-weight: bolder;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    z-index: 5;
+    visibility: hidden;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width:1000px) {
+    #toogle-menu {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,108 @@
+
+#side-bar {
+    height: 100%;
+    width: 300px;
+    left: 0px;
+    background-color: /*#040b14*/rgba(4, 11, 20, 0.75);
+    position: fixed;
+    transition: left 1s ease-in-out;
+    z-index: 5;
+    text-align: center;
+}
+
+
+#side-bar::-webkit-scrollbar {
+    width: 4px;
+	background-color: transparent;
+}
+
+#side-bar::-webkit-scrollbar-thumb {
+    width: 3px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#side-bar::-webkit-scrollbar-thumb:hover {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#side-bar::-webkit-scrollbar-thumb:active {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#profile-img {
+    margin-top: 30px;
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    border: 8px solid #7a7265;
+    background-color: #000;
+}
+
+.icon-social {
+    position: relative;
+    display: flex;
+    color: #fff;
+    background-color: #212431;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 5px;
+}
+
+.links-sc {
+    width: auto;
+    margin-left: 35px;
+    padding-top: 5px;
+}
+
+.button {
+    text-align: left;
+    padding: 8px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.section-link {
+    text-decoration: none;
+    text-align: left;
+    color: #a8a9b4;
+}
+
+
+.icon-button {
+    /* color: #a8a9b4; */
+    height: auto;
+    font-size: 18px;
+}
+
+.button-name {
+    text-decoration: none;
+    font-size: 14px;
+    color: #a8a9b4; 
+    padding-left: 5px;
+    user-select: none;
+}
+
+.section-link:hover {
+    color: #149ddd;
+}
+
+.bottom-txt {
+    color: #a8a9b4;
+    height: 20px;
+    width: 300px;
+    margin-top: 50px; /*50px*/
+}
+
+@media only screen and (max-width: 1000px) {
+    #side-bar {
+        left: -300px;
+    }
+}
